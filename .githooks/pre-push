@@ -1,0 +1,14 @@
+#!/bin/sh
+
+changed_files=$(git diff --diff-filter=d --name-only $(git merge-base HEAD origin/main) HEAD | grep .py)
+if [ ! -z "$changed_files" ];
+  then black -S --line-length 120 $(git diff --diff-filter=d --name-only $(git merge-base HEAD origin/main) HEAD | grep .py);
+else
+  echo "No Python files changed, skipping black."
+fi
+
+if [ ! -z "$changed_files" ];
+  then mypy $(git diff --diff-filter=d --name-only $(git merge-base HEAD origin/main) HEAD | grep .py);
+else
+  echo "No Python files changed, skipping mypy."
+fi
