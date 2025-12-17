@@ -1,8 +1,10 @@
 # Getting Started
 
-Run `source setup.sh` in the root of this repository to get the right dependencies.
-Run `run` in the created virtual environment to start the dev server.
+Run `source setup.sh` in the root of this repository to get the right dependencies and set up command shortcuts.
 
+## Command Shortcuts (from setup.sh)
+`run`: starts the dev server.
+`migrate`: runs the admin migration command.
 
 # Info
 
