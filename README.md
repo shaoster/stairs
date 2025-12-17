@@ -32,7 +32,7 @@ We use `mypy`.
 
 ## Unit Tests
 
-TBD.
+We use the django test entry point `manage.py test`.
 
 
 # Info
