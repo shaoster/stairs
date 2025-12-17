@@ -4,6 +4,7 @@ Run `source setup.sh` in the root of this repository to get the right dependenci
 
 ## Command Shortcuts (from setup.sh)
 `run`: starts the dev server.
+
 `migrate`: runs the admin migration command.
 
 # Info
