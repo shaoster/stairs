@@ -3,6 +3,11 @@
 Run `source setup.sh` in the root of this repository to get the right dependencies and set up command shortcuts.
 
 ## Command Shortcuts (from setup.sh)
+
+`manage`: alias for `python3 manage.py`. This is the most common entry point.
+
+Additionally, a few very commonly used sub-commands have their own aliases:
+
 `run`: starts the dev server.
 
 `migrate`: runs the admin migration command.
