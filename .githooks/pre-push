@@ -12,3 +12,5 @@ if [ ! -z "$changed_files" ];
 else
   echo "No Python files changed, skipping mypy."
 fi
+
+python3 manage.py test
